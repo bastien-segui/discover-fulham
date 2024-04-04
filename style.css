@@ -1,0 +1,478 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    height:100vh;
+    font-family:"Rubik", "Arial", "sans-serif";
+}
+
+.text-white {
+    color:#fff;
+}
+
+.text-centered {
+    text-align:center;
+}
+
+.discover-local, .directory-highlight, .discover-businesses, .offers, .follow-us, .form, .news-and-blogs {
+    padding:10px;
+}
+
+/* HEADER */
+
+header {
+    height:100px;
+}
+
+header {
+    /* height:100px; */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    opacity:0.6;
+    background-color:#fff;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:2;
+}
+
+.fa-solid.fa-bars {
+    font-size:40px;
+}
+
+.header-bottom {
+    top:0;
+    background-image: url("./img/the-prince.webp");
+    padding:200px 0 50px;
+}
+
+.header-bottom-text {
+    margin:0 10px 20px;
+    font-size:30px;
+    background-color:rgb(53, 104, 53);
+}
+
+/* DISCOVER LOCAL */
+
+.discover-local h1 {
+    margin:50px 0 20px;
+}
+
+.discover-local p {
+    margin:50px 0 20px;
+}
+
+.img-container {
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    height:auto;
+}
+
+.img-container img {
+    width:100%;
+    height:100%;
+    transition: transform .5s ease;
+    display:block;
+}
+
+.img-container:hover img {
+    transform: scale(1.05);
+    opacity:0.9;
+}
+
+.img-container a {
+    text-decoration:none;
+    background-color:gold;
+    width:100%;
+    height:auto;
+}
+
+.img-container h3 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    color:#fff;
+    font-size:25px;
+    text-align:center;
+    text-shadow: 0px 0px 10px black;
+    z-index:1;
+}
+
+/* DIRECTORY HIGHLIGHT */
+
+.directory-highlight img {
+    width:100%;
+    height:335px;
+}
+
+.line-border {
+    width:50px;
+    height:3px;
+    background-color: orangered;
+}
+
+.link-prince {
+    color:orangered;
+    display:block;
+    margin-bottom:10px;
+}
+
+.btn-read-more {
+    background-color:orangered;
+    text-decoration: none;
+    padding:5px 10px;
+    border-radius:10px;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+/* DISCOVER BUSINESSES */
+
+.discover-businesses-images-img-container {
+    position:relative;
+    filter: brightness(50%);
+    transition: filter .5s ease;
+}
+
+.discover-businesses-images-img-container img {
+    width:100%;
+    height:440px;
+    object-fit:cover;
+}
+
+.discover-businesses-images-img-container .text-container {
+    position:absolute;
+    top:300px;
+    left:50px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.discover-businesses-images-img-container:hover {
+    filter: brightness(70%);
+}
+
+.btn-show-more {
+    background-color:orangered;
+    padding:5px 10px;
+    border-radius:10px;
+    display:block;
+    font-family:"Rubik", "Arial", "sans-serif";
+    color:#fff;
+    border:none;
+    margin:0 auto;
+    box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* OFFERS */
+
+/* .offers {
+    height:600px;
+    background-image:url("./img/london-gherkin.jpg");
+    background-size:cover;
+    background-position:center;
+    opacity:0.3;
+    text-align:center;
+} */
+
+
+
+.offers {
+    position:relative;
+    height:600px;
+    text-align:center;
+}
+
+.offers:after {
+    content:'';
+    background: url("./img/london-gherkin.jpg") no-repeat center center;
+    height:600px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.2;
+}
+
+.fa-solid.fa-arrow-down {
+    font-size:40px;
+}
+
+.btn-view-offers {
+    background-color:orangered;
+    text-decoration: none;
+    padding:5px 10px;
+    border-radius:10px;
+    display:inline-block;
+    margin-bottom:20px;
+    color:#fff;
+    width:100%;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    height:600px;
+    background:rgba(0, 0, 0, 0.5) url("./img/buildings-view.jpg");
+    background-size:cover;
+    background-position:center;
+    background-blend-mode:darken;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.newsletter-container {
+    width:90%;
+    height:90%;
+    background-color:#fff;
+    text-align:center;
+    padding:10px;
+}
+
+.input-email {
+    width:100%;
+}
+
+.btn-subscribe {
+    background-color:orangered;
+    text-decoration: none;
+    padding:5px 10px;
+    border-radius:10px;
+    display:inline-block;
+    margin-bottom:20px;
+    color:#fff;
+    width:100%;
+}
+
+/* FOLLOW US */
+
+.follow-us-images .img-background {
+    position:relative;
+    background-size:100% 100%;
+    background-position:center;
+    width:100%;
+    height:300px;
+    display:block;
+    background-color:rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    transition: all 0.3s ease-in-out;
+    background-repeat:no-repeat;
+}
+
+.follow-us-images .img-background:hover {
+    background-size:102% 102%;
+}
+
+.follow-us-images .logo {
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+}
+
+.follow-us-images .img-bg-1 {
+    background-image:url("./img/fulham-street.jpg");
+}
+
+.follow-us-images .img-bg-2 {
+    background-image:url("./img/the-prince-building.jpg");
+}
+
+.follow-us-images .img-bg-3 {
+    background-image:url("./img/buildings-view.jpg");
+}
+
+.follow-us-images .img-bg-4 {
+    background-image:url("./img/fulham-broadway-station.webp");
+}
+
+
+/* FORM */
+
+.form h1 {
+    margin:50px 0 20px;
+    border-top:3px solid gold;
+}
+
+.form input {
+    width:100%;
+}
+
+.form button {
+    background-color:orangered;
+    text-decoration: none;
+    padding:5px 10px;
+    border-radius:10px;
+    display:inline-block;
+    margin-bottom:20px;
+    color:#fff;
+    width:100%;
+}
+
+.terms-and-conditions {
+    text-align:center;
+}
+
+/* NEWS & BLOGS */
+
+.news-and-blogs h1 {
+    text-align:center;
+}
+
+.card img {
+    width:100%;
+}
+
+.card a {
+    text-decoration:none;
+    color:black;
+}
+
+.news-and-blogs .more-news {
+    background-color:orangered;
+    padding:5px 10px;
+    border-radius:10px;
+    display:block;
+    text-decoration:none;
+    font-family:"Rubik", "Arial", "sans-serif";
+    color:#fff;
+    margin:0 auto;
+    width:150px;
+    text-align:center;
+    box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* FOOTER */
+
+footer .container {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+footer .flex-item {
+    width:50%;
+}
+
+footer ul {
+    list-style-type:none;
+}
+
+footer a {
+    text-decoration:none;
+    color:black;
+}
+
+.svg-container {
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+footer .credits {
+    text-align:center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width:960px) {
+
+    /* DISCOVER LOCAL */
+
+    .discover-local-text {
+        display:flex;
+    }
+
+    .discover-local-images {
+        display:flex;
+        flex-wrap:wrap;
+        --gap: 20px;
+        --columns: 3;
+        gap: var(--gap);
+    }
+
+    .discover-local-images .img-container {
+        width: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+    }
+
+    /* DIRECTORY HIGHLIGHT */
+
+    .directory-highlight .flex {
+        display:flex;
+    }
+
+    .directory-highlight .flex-left {
+        width:60%;
+    }
+
+    .directory-highlight img {
+        width:40%;
+    }
+
+    /* DISCOVER BUSINESSES */
+
+    .discover-businesses-images {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .discover-businesses-images-img-container {
+        width:calc(100%/3);
+    }
+
+    /* FOLLOW US */
+
+    .follow-us-images {
+        display:flex;
+    }
+
+    /* FORM */
+
+    .form-text {
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
+
+    .form h1 {
+        margin:10px 0 20px;
+        border-top:3px solid gold;
+    }
+
+    .form form {
+        width:50%;
+        margin:0 auto;
+    }
+
+    /* NEWS & BLOGS */
+
+    .news-and-blogs .cards-container {
+        display:flex;
+    }
+
+    .news-and-blogs .card {
+        width:calc(100%/3);
+        padding:20px;
+    }
+
+    .news-and-blogs img {
+        height:195px;
+        object-fit:cover;
+    }
+
+    /* FOOTER */
+
+    footer .flex-item {
+        width:25%;
+    }
+
+}
